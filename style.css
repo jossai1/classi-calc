@@ -1,0 +1,65 @@
+/*styles for the site*/
+
+.center {
+  text-align: center;
+}
+
+.grey {
+  color: grey;
+}
+
+.center-div {
+  text-align: center;
+}
+
+/*for time stamp*/
+
+input.ratios {
+  /* width: 75px;
+  height: 12px; */
+  /* padding: 6px;
+  font-size: x-small;
+  border: none; */
+  /* background-color: #e8e8e8; */
+}
+
+label{
+    float: left;
+    /* color: #EC576B; */
+    font-family: arial;
+}
+
+.row-item{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.ratio-icon {
+  width: 72px;
+  height: 68px;
+  margin-bottom: -26px;
+}
+
+@media(max-width:906px) {
+
+  p {
+    font-size: smaller;
+  }
+  input.ratios {
+    width: 75px;
+    height: 25px;
+    /* padding: 6px; */
+    font-size: x-small;
+    border: none;
+    /* background-color: #e8e8e8; */
+  }
+  .ratio-icon {
+    width: 50px;
+    height: 58px;
+    margin-bottom: -20px;
+  }
+  /* #logo {
+    width: 300px;
+    height: 400px;
+  } */
+}

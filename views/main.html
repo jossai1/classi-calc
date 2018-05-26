@@ -1,0 +1,98 @@
+<div class="ui container" ng-controller="MainController">
+  <div class="ui two column centered grid">
+    <div class="row centered">
+      <img id="logo" alt="logo" class="ui image big" src="../assets/images/logo.png">
+
+      <!-- <h2 style="text-align:center" class="ui header">
+        <img alt=" logo"  class="ui image large  " src="../assets/images/logo.png">
+        </h2> -->
+    </div>
+
+    <div class="ui divider">
+    </div>
+
+
+    <div ng-show="clicked" class=" row centered ui statistics grid centered">
+      <div class="ui raised segment">
+          <a ng-class="getCategory()">{{classification}}</a>
+          <span>
+              <h1>{{result}} %</h1>
+          </span>
+
+        </div>
+
+     </div>
+
+
+    <div class="row centered">
+      <br>
+      <h3 style="color:#4EC5C1">Ratios</h3>
+    </div>
+    <div class="ratios five column centered row">
+      <div class="ui input focus">
+        <input required="true" class="ratios" type="number" min="0" ng-model="ratio1" placeholder="0">
+      </div>
+      <img class="ratio-icon" src="../assets/images/dots.png" alt="">
+      <div class="ui input focus">
+        <input class="ratios" type="number" ng-model="ratio2" min="0" placeholder="1">
+      </div>
+      <img class="ratio-icon" src="../assets/images/dots.png" alt="">
+      <div class="ui input focus">
+        <input class="ratios" type="number" ng-model="ratio3" min="0" placeholder="2">
+      </div>
+
+
+      <br>
+      <br>
+
+    </div>
+
+    <form class="ui form  row-item">
+      <div class="field">
+        <label style="color: #EC576B;">Year 1 Grade</label>
+        <input type="number" ng-model="year1" placeholder="Year 1 " min="0" max="100">
+      </div>
+      <div class="field">
+        <label style="color: #EC576B;">Year 2 Grade</label>
+        <input type="number" ng-model="year2" placeholder="Year 2 " min="0" max="100">
+      </div>
+      <div class="field">
+        <label style="color: #EC576B;">Year 3 Grade</label>
+        <input type="number" ng-model="year3" placeholder="Year 3 " min="0" max="100">
+      </div>
+
+      <button ng-click="calculate()" style="background-color: #4EC5C1;" class="ui teal button" type="button">Calculate</button>
+      <button ng-click="restart()" class="ui icon button">
+        <i class="refresh icon"></i>
+      </button>
+    </form>
+
+
+    <!-- <div class="four column centered row">
+      <div class="row row-item">
+        <div class="ui input focus">
+          <input  class="years" type="number" ng-model="year1" placeholder="Year 1 ">
+        </div>
+      </div>
+      <div class="row row-item">
+        <div class="ui input focus">
+          <input  class="years" type="number" ng-model="year1" placeholder="Year 2 ">
+        </div>
+      </div>
+      <div class="row row-item">
+        <div class="ui input focus">
+          <input  class="years" type="number" ng-model="year1" placeholder="Year 3 ">
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <br>
+  <br>
+  <footer id="footer" class="center">
+    <div> Copyright Jane Ossai 2017  <a href="https://github.com/jossai1/"  title="FBN" target="_blank">F.B.N</a></div>
+
+      <div>Logo made by <a href="https://github.com/jossai1/" title="logo">Jane Ossai</a> using <a href="logomakr.com" title="Icon Archive">Logomakr</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"  title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    </footer>
+</div>
